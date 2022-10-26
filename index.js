@@ -7,7 +7,7 @@ try {
   const input3 = core.getInput('test_input-3');
   const input4 = core.getInput('test_input-4');
   console.log(`Input 1: ${input1}, Input 2: ${input2}, Input 3: ${input3}, Input 4: ${input4}`);
-  console.log("Running branch v1")
+  console.log("Running tag v2")
 } catch (error) {
   core.setFailed(error.message);
 }
