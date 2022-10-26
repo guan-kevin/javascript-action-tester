@@ -2,14 +2,11 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  const time = (new Date()).toTimeString();
-  core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  const input1 = core.getInput('test_input-1');
+  const input2 = core.getInput('test_input-2');
+  const input3 = core.getInput('test_input-3');
+  const input4 = core.getInput('test_input-4');
+  console.log(`Input 1: ${input1}, Input 2: ${input2}, Input 3: ${input3}, Input 4: ${input4}`);
 } catch (error) {
   core.setFailed(error.message);
 }
