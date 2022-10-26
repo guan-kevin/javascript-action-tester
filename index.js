@@ -9,7 +9,7 @@ try {
   console.log(`Input 1: ${input1}, Input 2: ${input2}, Input 3: ${input3}, Input 4: ${input4}`);
   console.log("Running commit sha")
   
-  if (input1 != 1 || input2 != 2 || input3 != 3) {
+  if (input1 != 1 || input2 != 2 || input3 != 3 || input4 != "") {
     core.setFailed("Invalid input")
   }
 } catch (error) {
