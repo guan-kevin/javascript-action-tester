@@ -14,7 +14,6 @@ inputs:
     default: 3
   test_input-4:
     description: 'Fourth test input'
-    required: true
 runs:
   using: 'node16'
   main: 'index.js'
