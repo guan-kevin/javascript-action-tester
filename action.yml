@@ -1,13 +1,20 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Javascript Action Tester'
+description: 'Test Javascript Action'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  test_input-1:
+    description: 'First test input'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 1
+  test_input-2:
+    description: 'Second test input'
+    required: false
+    default: 2
+  test_input-3:
+    description: 'Third test input'
+    default: 3
+  test_input-4:
+    description: 'Fourth test input'
+    required: true
 runs:
   using: 'node16'
   main: 'index.js'
