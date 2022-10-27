@@ -1,0 +1,3 @@
+[submodule "submodule-tester"]
+	path = submodule-tester
+	url = https://github.com/guan-kevin/submodule-tester.git
